@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "restaurants",
+  "collectionName": "menus",
   "info": {
-    "name": "restaurant",
+    "name": "menu",
     "description": ""
   },
   "options": {
@@ -19,16 +19,11 @@
       "default": "",
       "type": "text"
     },
-    "mainImage": {
+    "image": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
-    },
-    "categories": {
-      "collection": "category",
-      "via": "restaurants",
-      "columnName": ""
     }
   }
 }
