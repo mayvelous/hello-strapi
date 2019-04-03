@@ -1,3 +1,6 @@
 # Learning Strapi Headless CMS
 
-- Quick Start: https://strapi.io/documentation/3.x.x/getting-started/quick-start.html#_2-create-a-new-project
+- Quick Start + Tutorial
+    -- /quickstart
+- Cooking a Deliveroo clone with Next.js (React), GraphQL, Strapi and Stripe
+    -- /strapi-deliveroo
