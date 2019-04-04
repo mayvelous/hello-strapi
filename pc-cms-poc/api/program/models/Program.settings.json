@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "programs",
+  "info": {
+    "name": "program",
+    "description": "Podcast extra fields"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "programId": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "heroImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "authors": {
+      "collection": "author",
+      "via": "programs"
+    }
+  }
+}

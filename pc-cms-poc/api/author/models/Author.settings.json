@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "authors",
+  "info": {
+    "name": "author",
+    "description": "Podcast Author(s) information"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "programs": {
+      "collection": "program",
+      "via": "authors",
+      "dominant": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    }
+  }
+}
